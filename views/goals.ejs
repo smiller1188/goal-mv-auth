@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 class="color">The Key to Making my Dreams a Reality</h1>
+    <h3 class="align">"You are never too old to set another goal or to dream a new dream." –C.S. Lewis</h3>
+    <div class="container">
+    <ul>
+        <h2>My Goals</h2>
+    <% goals.forEach( el => { %>
+            <li class='goalItem' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.goal %></span>
+                <span class='del'> Delete </span>
+            </li>
+    <% }) %>    
+    </ul>
+
+    <h3><%= user.userName %> has <%= left %> goals. Keep going <%= user.userName %>!</h3>
+
+    <form action="/goals/createGoal" method='POST'>
+        <input type="text" placeholder="Enter Goal" name='goalItem'>
+        <input type="submit">
+    </form>
+</div>
+
+    <a href="/logout" class="logout"> Logout </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+img {
+    padding-top: 20px;
+}
+a:link {
+    padding-right: 10px;
+}
+a:hover {
+    text-emphasis-color: red;
+}
+form {
+    padding-bottom: 10px;
+}
+ul {
+    list-style-type: none;
+}
+input {
+    border-radius: 1rem;
+    padding: .5rem;
+}
+.color {
+    color: blue;
+    text-align: center;
+}
+.align {
+    text-align: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.not {
+    text-decoration: bold;
+}
+.container {
+    padding-top: 30px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.del {
+    padding-left: 5px;
+    color: red;
+}
+.logout {
+    padding-left: 400px;
+    font-size: 18px;
+}
